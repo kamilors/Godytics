@@ -1,0 +1,11 @@
+Import('env')
+
+godytics_env = env.Clone()
+
+sources = [
+  'register_types.cpp',
+  'ios/src/godytics.mm'
+]
+
+if (env["platform"] == "iphone"):
+  godytics_env.add_source_files(env.modules_sources, sources)
