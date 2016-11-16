@@ -13,7 +13,7 @@ Supported platforms;
 modules="org/godotengine/godot/Godytics"
 ```
 
-### Add Analytics.gd GDScript (Global Script) and define module initialization code in _ready() func
+### Add Analytics.gd GDScript (Singleton / Autoload Script) and define module initialization code in _ready() func
 
 ```
 var godytics
@@ -33,7 +33,7 @@ func event(cat, action, label):
 
 ```
 
-Look at this for global script -> http://docs.godotengine.org/en/stable/tutorials/step_by_step/singletons_autoload.html
+How to define Singleton/Autoload script -> http://docs.godotengine.org/en/stable/tutorials/step_by_step/singletons_autoload.html
 
 ### Send Screen Hit
 
