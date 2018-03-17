@@ -6,16 +6,16 @@
 #import <UIKit/UIKit.h>
 
 
-Godytics* instance = NULL;
+Godytics* GODYTICS_INSTANCE = NULL;
 
 Godytics::Godytics() {
-    ERR_FAIL_COND(instance != NULL);
-    instance = this;
+    ERR_FAIL_COND(GODYTICS_INSTANCE != NULL);
+    GODYTICS_INSTANCE = this;
     initialized = false;
 }
 
 Godytics::~Godytics() {
-    instance = NULL;
+    GODYTICS_INSTANCE = NULL;
 }
 
 void Godytics::init(const String &tId) {
